@@ -160,3 +160,7 @@ footer {;
     margin-top: 20px;
     border-top: 1px solid #E5E5E5;
 }
+
+gplus-person > md-card {
+    width: 250px;
+}
