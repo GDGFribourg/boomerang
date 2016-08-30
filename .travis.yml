@@ -9,6 +9,7 @@ env:
     - secure: "FWx+o5K8g4/y4rKi2QGqKu4iNIlgj/qI9YH9VwOyUwh2ZujR+JpbA193gfa41sU73MquB8fE3Gto76M/5/tCnFKoHLAGWLVqhnWHwv2zKXtmaRG/dXkwC/bHF/XL4aqsTrRFn68kZlh96pcJyp+EUh0o5sshUW+uBolSPS3TKw9c2uGx170pYRzP//pa9KGGy3QbYHRLiHyzUDwUmigwimBt1Ny3Slaj4Hj+p39k3rxfbr0toWGqO0inyZPvi3P8GNqKxW0mqPtAZJBuyuEjceP3KOSbzpxav1U7k8881h7y+B59aEXIDTbC4YYAeHJqsqMjAxUwXTcTGhohdycEHc+dybBjgRQ0+mnkIMqUPyybwSUIwAA+Zl+X/JBH6H78AzwZw1baKAgiKLDfeLTRUUyIsRagG7t5E63gc3T7RY+8l+ZEfpatb1eglTE+Y2EJ7dTR5UjyMKn9VT+sfZC3lU1xmfcXJ2NGBKkP812LIm2a15k+DWNPrht1tTXwRJ/MJSnPZzHdzhmpGIsI5/O2EW3M3o/9jyRMizp6Qy/b1KnWVl18Uo6cUp8KTMK+8c7QmmZ1z9Nh0wdhCB2nFjUBYI3+/lzyt3SJBjUgaaLcGn2iJgUTatLT6p9ggwcvbbniSZrcrtM2MR7MLc9GygCXLN/c+JM0ddudRCed0E0Jisk="
 install:
 - npm install
+- npm install firebase-tools
 before_script:
 # Necessary to run test on Travis CI that require a graphical interface.
 # See https://docs.travis-ci.com/user/gui-and-headless-browsers
@@ -22,4 +23,4 @@ deploy:
   skip_cleanup: true
   script: script/deploy.sh
   on:
-    tag: true
+    branch: production
