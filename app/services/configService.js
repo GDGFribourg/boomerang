@@ -8,7 +8,7 @@ angular.module('gdgXBoomerang')
         'domain'        : 'https://www.gdgfribourg.ch',
         'twitter'       : 'gdgfribourg',
         'facebook'      : 'gdgfribourg',
-        // 'youtube'       : 'UCkiYHK3IZMk5XsYZ626b9Rw',
+        'youtube'       : 'UC9VJwqJhgpe5jbPLwxYP6nw',
         'meetup'        : 'gdgfribourg',
         // Change to 'EEEE, MMMM d, y - H:mm' for 24 hour time format.
         'dateFormat'    : 'EEEE, MMMM d, y - H:mm',
