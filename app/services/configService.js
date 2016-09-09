@@ -30,8 +30,8 @@ angular.module('gdgXBoomerang')
             designSprints: false,
             roundTables: true
         },
-        // 'HUB_IP': 'https://hub.gdgx.io'
-        'HUB_IP': 'https://hub.gdgfribourg.ch'
+        'HUB_IP': 'https://hub.gdgx.io'
+        // 'HUB_IP': 'https://hub.gdgfribourg.ch'
         // To update the snippet which is used for sharing, see the TODO in the index.html.
     };
 });
