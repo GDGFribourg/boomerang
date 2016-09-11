@@ -164,3 +164,9 @@ footer {;
 gplus-person > md-card {
     width: 250px;
 }
+
+
+/* news cards layout: fill height */
+.newsContent, .newsContent md-card, .newsContent gplus-no-attachments, .newsContent gplus-no-attachments .md-card {
+    height: 100%;
+}

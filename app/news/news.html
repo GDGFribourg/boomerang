@@ -2,7 +2,8 @@
 <div layout layout-wrap>
     <div ng-repeat="article in vm.news" flex-xs="100" flex-sm="100" flex-md="50" flex-gt-md="33" flex-gt-lg="33">
         <md-whiteframe class="md-whiteframe-1dp" layout="column"
-                       ng-style="{ 'margin': $mdMedia('gt-sm') ? '4px' : '0 0 4px 0' }">
+                       ng-style="{ 'height': $mdMedia('gt-sm') ? 'calc(100% - 8px)' : 'auto',
+                                   'margin': $mdMedia('gt-sm') ? '4px' : '0 0 4px 0' }">
             <md-toolbar>
                 <div class="md-toolbar-tools">
                     <img ng-src="{{ article.icon }}" alt="Article Icon" />
