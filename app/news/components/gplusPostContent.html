@@ -1,6 +1,7 @@
 <md-content>
     <md-list>
-        <md-item>
+        <!--remove empty lines and avoid repeating the logo-->
+        <!--md-item>
             <md-item-content>
                 <div class="md-tile-left" style="align-self: flex-start;">
                     <a ng-href="{{ article.item.actor.url }}">
@@ -9,21 +10,23 @@
                 </div>
                 <div class="md-tile-content">
                     <p>{{ article.item.actor.displayName }}</p>
-                    <h3 ng-bind-html="article.item.annotation"></h3>
+                    <h3 ng-if="article.item.annotation" ng-bind-html="article.item.annotation"></h3>
                 </div>
             </md-item-content>
         </md-item>
-        <md-divider md-inset></md-divider>
+        <md-divider md-inset></md-divider-->
         <md-item>
             <md-item-content>
-                <div class="md-tile-left" style="align-self: flex-start;">
+                <div class="md-tile-left" ng-if="article.object.actor.url" style="align-self: flex-start;">
                     <a ng-href="{{ article.object.actor.url }}">
                         <img ng-src="{{ article.object.actor.image.url }}" alt="{{ article.object.actor.displayName }}">
                     </a>
                 </div>
                 <div class="md-tile-content">
-                    <p ng-if="article.object.actor">{{ article.object.actor.displayName }} originally shared: </p>
-                    <p ng-bind-html="article.body"></p>
+                    <p ng-if="article.object.actor.displayName">
+                            From <emph>{{ article.object.actor.displayName }}:</emph>
+                    </p>
+                    <p ng-if="article.body" ng-bind-html="article.body"></p>
                     <ng-transclude></ng-transclude>
                 </div>
             </md-item-content>
