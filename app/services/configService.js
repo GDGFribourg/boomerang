@@ -14,7 +14,7 @@ angular.module('gdgXBoomerang')
         'dateFormat'    : 'EEEE, MMMM d, y - H:mm',
         'cover' : {
             title: 'DevFest Switzerland 2017 - October 28-29 - Fribourg',
-            subtitle: 'The biggest Google tech conference in Switzerland. All about machine learning, programming languages and applied emerging technologies',
+            subtitle: 'The biggest Google tech conference in Switzerland.',
             button: {
                 text: 'More information',
                 url: 'https://devfest.ch/'
