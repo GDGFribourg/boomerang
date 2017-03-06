@@ -13,8 +13,8 @@ angular.module('gdgXBoomerang')
         // Change to 'EEEE, MMMM d, y - H:mm' for 24 hour time format.
         'dateFormat'    : 'EEEE, MMMM d, y - H:mm',
         'cover' : {
-            title: 'DevFest Switzerland 2016 - November 26-27',
-            subtitle: 'The biggest Google tech conference in Switzerland. All about Android, Web and Cloud!',
+            title: 'DevFest Switzerland 2017 - October 28-29 - Fribourg',
+            subtitle: 'The biggest Google tech conference in Switzerland. All about machine learning, programming languages and applied emerging technologies',
             button: {
                 text: 'More information',
                 url: 'https://devfest.ch/'
